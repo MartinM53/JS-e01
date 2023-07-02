@@ -90,16 +90,26 @@ arrayImprimir(diasSemana);
 // 7 - Crear una función que reciba un array con 10 números e imprima por consola todos los valores de ese array,
 // menos el que se encuentre en la 5ta posición del mismo. Ayuda: Recuerden que el primer índice de un array es "0".
 
-let decenas = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
-
 function arrayDecenas(array2) {
   for (let i = 0; i < array2.length; i++)
     if (i !== 4) {
       console.log(array2[i]);
     }
 }
-
+let decenas = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 arrayDecenas(decenas);
 
 // 8 - Crea una función que reciba un array de números y un número por parámetro e imprima por consola
 // cada número del array multiplicado por el número pasado por parámetro.
+
+let años = [78, 86, 2022];
+let number = 2;
+
+function multiplicador(array3, numero) {
+  for (let i = 0; i < array3.length; i++) {
+    let resultado = array3[i] * numero;
+    console.log(resultado);
+  }
+}
+
+multiplicador(años, number);
